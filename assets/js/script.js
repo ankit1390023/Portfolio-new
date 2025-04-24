@@ -36,12 +36,15 @@ $(document).ready(function () {
             scrollTop: $($(this).attr('href')).offset().top,
         }, 500, 'linear')
     });
+    //  VITE_EMAILJS_SERVICE_ID = service_3mta2nk
+    //  VITE_EMAILJS_TEMPLATE_ID = template_97ogr1k
+    //  VITE_EMAILJS_USER_ID = njHD48xNl8tkUu47J
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+        emailjs.init("njHD48xNl8tkUu47J");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        emailjs.sendForm('service_3mta2nk', 'template_97ogr1k', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -59,7 +62,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Ankit Srivastav";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
@@ -110,7 +113,7 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <img draggable="false" src="${project.image}" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>

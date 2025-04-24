@@ -1,100 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
-    <title>Projects | Portfolio Jigar Sable</title>
-</head>
-<body oncontextmenu="return false">
+    <title>Projects | Portfolio Ankit Srivastav</title>
+  </head>
 
-<!-- navbar starts -->
-<header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Jigar</a>
+  <body oncontextmenu="return false">
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#education">Education</a></li>
-            <li><a class="active" href="/#work">Work</a></li>
-            <li><a href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
+    <!-- navbar starts -->
+    <header>
+      <a href="/" class="logo"><i class="fab fa-node-js"></i> Ankit</a>
 
-<!-- work project section starts -->
-<section class="work" id="work">
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/#home">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#skills">Skills</a></li>
+          <li><a href="/#education">Education</a></li>
+          <li><a class="active" href="/#work">Work</a></li>
+          <li><a href="/#experience">Experience</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar ends -->
 
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-  
-  <div id="filters" class="button-group">
-    <button class="btn is-checked" data-filter="*">All Projects</button>
-    <button class="btn" data-filter=".mern">MERN Stack</button>
-    <button class="btn" data-filter=".lamp">LAMP Stack</button>
-    <button class="btn" data-filter=".basicweb">Basic Web</button>
-    <button class="btn" data-filter=".android">Android App</button>
-  </div>
+    <!-- work project section starts -->
+    <section class="work" id="work">
 
-  <div class="box-container">
+      <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
-    <!-- <div class="box tilt">
-      <img src="/assets/images/projects/agecalc.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
+      <div id="filters" class="button-group">
+        <button class="btn is-checked" data-filter="*">All Projects</button>
+        <button class="btn" data-filter=".fullstack">Full Stack</button>
+        <button class="btn" data-filter=".frontend">Frontend</button>
+        <button class="btn" data-filter=".backend">Backend</button>
       </div>
-    </div> -->   
 
-  </div>
+      <div class="box-container" id="projects">
+        <!-- Projects will be loaded here dynamically -->
+      </div>
 
-  <div class="backbtn">
-    <a href="/#work" class="btn">
-        <i class="fas fa-arrow-left"></i>
-        <span>Back to Home</span>
-  </a>
-  </div>
+      <div class="backbtn">
+        <a href="/#work" class="btn">
+          <i class="fas fa-arrow-left"></i>
+          <span>Back to Home</span>
+        </a>
+      </div>
 
-</section>
-<!-- work project section ends -->
+    </section>
+    <!-- work project section ends -->
 
-<!-- scroll top btn -->
-<a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
+    <!-- scroll top btn -->
+    <a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
+    <!-- scroll back to top -->
 
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- vanilla tilt.js links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
+    <!-- isotope filter plugin cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+      integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
-<!-- isotope filter plugin cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(document).ready(function () {
+        // Toggle navbar
+        $('#menu').click(function () {
+          $(this).toggleClass('fa-times');
+          $('.navbar').toggleClass('nav-toggle');
+        });
 
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+        // Scroll behavior
+        $(window).on('scroll load', function () {
+          $('#menu').removeClass('fa-times');
+          $('.navbar').removeClass('nav-toggle');
+          $('#scroll-top').toggleClass('active', $(this).scrollTop() > 60);
+        });
 
-<script src="./script.js"></script>
+        // Load projects
+        loadProjects();
+      });
 
-</body>
+      // Change title and favicon on tab switch
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === "visible") {
+          document.title = "Projects | Portfolio Ankit Srivastav";
+          $('#favicon').attr('href', '/assets/images/favicon.png');
+        } else {
+          document.title = "Come Back To Portfolio";
+          $('#favicon').attr('href', '/assets/images/favhand.png');
+        }
+      });
+
+      // Fetch and render projects
+      async function loadProjects() {
+        try {
+          const container = document.getElementById("projects");
+          if (!container) {
+            showError("Project container not found");
+            return;
+          }
+
+          container.innerHTML = '<div class="loading">Loading projects...</div>';
+
+          const res = await fetch('projects.json');
+          if (!res.ok) {
+            throw new Error(`Failed to fetch projects: ${res.status}`);
+          }
+
+          const projects = await res.json();
+          displayProjects(projects);
+        } catch (err) {
+          console.error("Error loading projects:", err);
+          showError("Failed to load projects. Please try again later.");
+        }
+      }
+
+      // Show error message
+      function showError(message) {
+        const container = document.getElementById("projects");
+        if (container) {
+          container.innerHTML = `<div class="error">${message}</div>`;
+        }
+      }
+
+      // Render project cards
+      function displayProjects(projects) {
+        const container = document.getElementById("projects");
+        if (!container || !projects || !projects.length) {
+          showError("No projects found");
+          return;
+        }
+
+        let html = '';
+        projects.forEach(project => {
+          if (!project.image) {
+            project.image = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=60";
+          }
+
+          html += `
+        <div class="grid-item ${project.category || ''}">
+          <div class="box tilt">
+            <div class="image-container" style="
+              width: 100%;
+              height: 200px;
+              background-image: url('${project.image}');
+              background-size: cover;
+              background-position: center;
+              border-radius: 8px;
+            "></div>
+            <div class="content">
+              <div class="tag"><h3>${project.name || 'Untitled Project'}</h3></div>
+              <div class="desc">
+                <p>${project.desc || 'No description available'}</p>
+                <div class="btns">
+                  ${project.links?.view ? `
+                  <a href="${project.links.view}" class="btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-eye"></i> View
+                  </a>` : ''}
+                  ${project.links?.code ? `
+                  <a href="${project.links.code}" class="btn" target="_blank" rel="noopener noreferrer">
+                    Code <i class="fas fa-code"></i>
+                  </a>` : ''}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`;
+        });
+
+        container.innerHTML = html;
+
+        // Initialize Isotope
+        const $grid = $('.box-container').isotope({
+          itemSelector: '.grid-item',
+          layoutMode: 'fitRows'
+        });
+
+        // Filter buttons
+        $('.button-group').on('click', 'button', function () {
+          $('.button-group .is-checked').removeClass('is-checked');
+          $(this).addClass('is-checked');
+          const filter = $(this).attr('data-filter') || '*';
+          $grid.isotope({ filter });
+        });
+
+        // Initialize tilt animation
+        VanillaTilt.init(document.querySelectorAll('.tilt'), {
+          max: 20,
+          speed: 400,
+          glare: true,
+          "max-glare": 0.2
+        });
+      }
+
+      // Tawk.to chat initialization
+      if (typeof Tawk_API === 'undefined') {
+        (function () {
+          var s1 = document.createElement("script");
+          s1.async = true;
+          s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+          s1.charset = 'UTF-8';
+          s1.setAttribute('crossorigin', '*');
+          document.getElementsByTagName("script")[0].parentNode.insertBefore(s1, null);
+        })();
+      }
+    </script>
+  </body>
+
 </html>
